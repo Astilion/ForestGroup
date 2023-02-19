@@ -14,12 +14,26 @@ body {
 	color: $secondary-color;
 }
 
+// NAV
 .nav {
-	position: relative;
+	position: fixed;
 	width: 100%;
 	height: 4em;
 	background-color: $main-color;
 
+	.logo {
+		margin: 0 1em;
+		position: absolute;
+		top: 22px;
+		left: 26px;
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		h2 {
+			font-size: 40px;
+			color: $logo-color;
+		}
+	}
 	.burger-btn {
 		display: flex;
 		flex-direction: column;
@@ -69,39 +83,62 @@ body {
 		padding: 0 3em 3em 3em;
 		height: 100vh;
 		width: 100vw;
-        left: -100vw;
-        top: 4em;
+		right: -100vw;
+		top: 4em;
 		background-color: $main-color;
 		transition: transform 0.3s;
 	}
 	&__item {
-        position: relative;
+		position: relative;
 		padding: 2em;
 		font-weight: bold;
 		text-decoration: none;
 		color: $secondary-color;
 
-        &::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            height: 3px;
-            width: 100%;
-            background-color: $secondary-color;
-            transform: scaleX(0);
-            transform-origin: right;
-            transition: transform .3s ease-in;
-        }
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 3px;
+			width: 100%;
+			background-color: $secondary-color;
+			transform: scaleX(0);
+			transform-origin: right;
+			transition: transform 0.3s ease-in;
+		}
 
-        &:hover::after {
-            transform: scaleX(1);
-            transform-origin: left;
-        }
+		&:hover::after {
+			transform: scaleX(1);
+			transform-origin: left;
+		}
 	}
-
 }
 
 .active {
-    transform: translate(100vw);
+	transform: translate(-100vw);
+}
+
+@media (min-width: 992px) {
+	.nav {
+		.burger-btn {
+			display: none;
+		}
+		&__items {
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-end;
+			padding: 2em;
+			height: 4em;
+			right: 0;
+			top: 0;
+			background-color: $main-color;
+			transition: transform 0.3s;
+			z-index: -1;
+		}
+
+		&__item {
+			padding: 1em;
+		}
+	}
 }
