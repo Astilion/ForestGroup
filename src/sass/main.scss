@@ -1,13 +1,107 @@
+@use "index.scss" as *;
+
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    font-size: 1.6rem;
-    font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+	font-family: "Montserrat", sans-serif;
+	color: $secondary-color;
+}
 
+.nav {
+	position: relative;
+	width: 100%;
+	height: 4em;
+	background-color: $main-color;
+
+	.burger-btn {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		padding: 0.6em;
+		height: 55px;
+		width: 60px;
+		background: none;
+		cursor: pointer;
+		border: 1.5px solid $secondary-color;
+		border-radius: 8px;
+
+		&:focus {
+			outline: none;
+			border: 1.5px solid $secondary-color;
+			border-radius: 8px;
+		}
+
+		&__bar {
+			position: relative;
+			top: 0;
+			width: 65%;
+			height: 3px;
+			margin-bottom: 9px;
+			background-color: $secondary-color;
+		}
+
+		&__bar:last-child {
+			margin-bottom: 0;
+		}
+
+		&:hover .burger-btn__bar {
+			background-color: $footer-color;
+		}
+	}
+
+	&__items {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		padding: 0 3em 3em 3em;
+		height: 100vh;
+		width: 100vw;
+        left: -100vw;
+        top: 4em;
+		background-color: $main-color;
+		transition: transform 0.3s;
+	}
+	&__item {
+        position: relative;
+		padding: 2em;
+		font-weight: bold;
+		text-decoration: none;
+		color: $secondary-color;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            width: 100%;
+            background-color: $secondary-color;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform .3s ease-in;
+        }
+
+        &:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+	}
+
+}
+
+.active {
+    transform: translate(100vw);
 }
