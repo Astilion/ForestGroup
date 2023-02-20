@@ -17,6 +17,7 @@ body {
 // NAV
 .nav {
 	position: fixed;
+	margin-bottom: 1em;
 	width: 100%;
 	height: 4em;
 	background-color: $main-color;
@@ -80,8 +81,9 @@ body {
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-evenly;
+		margin: 0;
 		padding: 0 3em 3em 3em;
-		height: 100vh;
+		height: 80vh;
 		width: 100vw;
 		right: -100vw;
 		top: 4em;
@@ -90,7 +92,8 @@ body {
 	}
 	&__item {
 		position: relative;
-		padding: 2em;
+		margin-bottom: 0.5em auto;
+		padding: .5em 1em;
 		font-weight: bold;
 		text-decoration: none;
 		color: $secondary-color;
@@ -119,6 +122,9 @@ body {
 	transform: translate(-100vw);
 }
 
+//media
+
+//nav
 @media (min-width: 992px) {
 	.nav {
 		.burger-btn {
@@ -128,9 +134,9 @@ body {
 			flex-direction: row;
 			align-items: center;
 			justify-content: flex-end;
-			padding: 2em;
-			height: 4em;
-			right: 0;
+			padding: 0.5em 3em;
+			height: 2.5em;
+			right: 40px;
 			top: 0;
 			background-color: $main-color;
 			transition: transform 0.3s;
@@ -138,7 +144,16 @@ body {
 		}
 
 		&__item {
-			padding: 1em;
+			padding: 1.9em 1em 1.4em 1em;
+			font-weight: normal;
+
+			&:hover {
+				color: $main-color;
+				background-color: $secondary-color;
+			}
+			&::after {
+				display: none;
+			}
 		}
 	}
 }
