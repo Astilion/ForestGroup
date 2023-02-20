@@ -8,6 +8,7 @@
 	padding: 0;
 }
 
+
 body {
 	font-size: 1.6rem;
 	font-family: "Montserrat", sans-serif;
@@ -21,12 +22,13 @@ body {
 	width: 100%;
 	height: 4em;
 	background-color: $main-color;
+	z-index: 100;
 
 	.logo {
 		margin: 0 1em;
 		position: absolute;
 		top: 22px;
-		left: 26px;
+		left: 10px;
 		display: flex;
 		justify-content: left;
 		align-items: center;
@@ -122,6 +124,51 @@ body {
 	transform: translate(-100vw);
 }
 // HEADER
+ .header {
+	position: absolute;
+	top: 90px;
+	color: $main-color;
+	.hero-img {
+		position: relative;
+		height: 60vh;
+		width: 100vw;
+		background-image: url('../img/jungle-s.jpg');
+		background-position: center;
+		background-size: cover;
+		z-index: 0;
+		&__shadow {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0, 0.6);
+			z-index: -1;
+		}
+		&__text {
+			position: absolute;
+			display: flex;
+			top: 80px;
+			left: 15px;
+			flex-direction: column;
+			justify-content: center;
+			padding: 2em 1em;
+			text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+
+			&--p{
+				padding: 0.3em;
+				margin-bottom: 0.2em;
+				font-size: 1.5rem;
+			}
+			&--h1 {
+				padding: 0.3em;
+				margin: auto;
+				font-size: 1.7rem;
+
+
+			}
+
+		}
+	}
+ }
 
 //media
 
@@ -145,7 +192,7 @@ body {
 		}
 
 		&__item {
-			padding: 1.9em 1em 1.4em 1em;
+			padding: 2.1em 1em 1.2em 1em;
 			font-weight: normal;
 
 			&:hover {
