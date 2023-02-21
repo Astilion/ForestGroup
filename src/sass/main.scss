@@ -37,6 +37,7 @@ body {
 		h2 {
 			font-size: 40px;
 			color: $logo-color;
+			font-weight: normal;
 		}
 	}
 	.burger-btn {
@@ -208,6 +209,7 @@ body {
 				text-align: center;
 			}
 			&--p {
+				padding: 1em;
 				font-size: 0.8rem;
 			}
 		}
@@ -254,27 +256,30 @@ body {
 
 .offers {
 	&__p {
-		margin: 1em;
+		margin: 1em auto .5em;
 		padding: 0.5em;
 		text-align: center;
 		font-size: 1rem;
 	}
 	&__cards-container {
-		margin: 0.5em auto;
 		padding: 1em;
 	}
 	&__card {
+		margin: 0.5em auto 1em;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		margin: 0.5em auto;
 		padding: 0.5em;
 		height: 400px;
 		width: 280px;
 		border: 1px solid transparent;
 		border-radius: 8px;
 		box-shadow: 2px 2px 2px 2px rgba(41, 41, 41, 0.8);
+		transition: transform .2s;
+		&:hover {
+			transform: scale(98%);
+		}
 	}
 	&__h3 {
 		margin-bottom: 0.3em;
@@ -292,6 +297,30 @@ body {
 	&__element {
 		padding: 0.3em;
 		font-size: 1rem;
+	}
+	&__check {
+		color: rgb(16, 197, 13)
+	}
+	&__element-off {
+		color: rgb(122, 122, 122);
+	}
+	&__button {
+		margin-top: 1em;
+		padding: .5em 3em;
+		font-size: 1.2rem;
+		border: 1px solid transparent;
+		border-radius: 8px;
+		box-shadow: 1px 1px 5px 0px rgba(66, 68, 90, 1);
+		background-color: $button-color2;
+		cursor: pointer;
+		transition: background-color .3s
+	}
+	&__button-p {
+		background-color: $button-color;
+
+	}
+	&__button:hover {
+		background-color: $button-hover-color;
 	}
 }
 
