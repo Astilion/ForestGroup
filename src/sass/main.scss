@@ -362,6 +362,17 @@ body {
 			}
 		}
 	}
+	.offers {
+		&__cards-container {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		&__card {
+			margin: 1em auto;
+
+		}
 }
 
 @media (min-width: 992px) {
@@ -428,4 +439,5 @@ body {
 			font-size: 1.6rem;
 		}
 	}
+}
 }
