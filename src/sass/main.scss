@@ -366,6 +366,12 @@ body {
 }
 
 @media (min-width: 992px) {
+	.section {
+		&__heading {
+			font-size: 3.2rem;
+			margin-bottom: 1em;
+		}
+	}
 	.nav {
 		.burger-btn {
 			display: none;
