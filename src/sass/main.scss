@@ -139,7 +139,7 @@ body {
 		align-items: center;
 		height: 60vh;
 		width: 100vw;
-		background-image: url("../../dist/img/jungle-s.JPG");
+		background-image: url("../../dist/img/jungle-s.jpg");
 		background-position: center;
 		background-size: cover;
 		z-index: 0;
@@ -226,7 +226,7 @@ body {
 		justify-content: center;
 		text-align: center;
 		height: 35vh;
-		background: url("../../dist/img/girl-s.JPG");
+		background: url("../../dist/img/girl-s.jpg");
 		background-size: cover;
 		background-position: center;
 		color: $main-color;
@@ -408,13 +408,13 @@ body {
 	.header {
 		.hero-img {
 			justify-content: start;
-			background-image: url("../../dist/img/jungle-b.JPG");
+			background-image: url("../../dist/img/jungle-b.jpg");
 		}
 	}
 
 	.banner-section {
 		&__img {
-			background: url("../../dist/img/girl-b.JPG");
+			background: url("../../dist/img/girl-b.jpg");
 			background-size: cover;
 			background-position: center;
 		}
