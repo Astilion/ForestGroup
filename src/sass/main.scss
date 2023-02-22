@@ -158,19 +158,18 @@ body {
 			text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 			animation: header-animation 2s ease-out forwards;
 			opacity: 0;
-
-			&--p {
-				padding: 0.3em;
-				margin: auto;
-				font-size: 1.3rem;
-				font-weight: bold;
-			}
-			&--h1 {
-				padding: 0.3em;
-				margin-bottom: 0.2em;
-				font-size: 1rem;
-				font-weight: normal;
-			}
+		}
+		&__p {
+			padding: 0.3em;
+			margin: auto;
+			font-size: 1.3rem;
+			font-weight: bold;
+		}
+		&__h1 {
+			padding: 0.3em;
+			margin-bottom: 0.2em;
+			font-size: 1rem;
+			font-weight: normal;
 		}
 	}
 }
@@ -189,29 +188,27 @@ body {
 	}
 }
 .aboutus {
-	&__container {
-		&__img {
-			width: 100%;
-			padding: 1em;
-			object-fit: cover;
+	&__img {
+		width: 100%;
+		padding: 1em;
+		object-fit: cover;
+	}
+	&__text {
+		margin: 0.5em;
+		padding: 0.5em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: $secondary-color;
+		&--h3 {
+			margin-bottom: 1em;
+			font-size: 1.4rem;
+			text-align: center;
 		}
-		&__text {
-			margin: 0.5em;
-			padding: 0.5em;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			color: $secondary-color;
-			&--h3 {
-				margin-bottom: 1em;
-				font-size: 1.4rem;
-				text-align: center;
-			}
-			&--p {
-				padding: 1em;
-				font-size: 0.8rem;
-			}
+		&--p {
+			padding: 1em;
+			font-size: 0.8rem;
 		}
 	}
 }
@@ -231,32 +228,30 @@ body {
 		background-position: center;
 		color: $main-color;
 		z-index: 1;
-
-		&--shadow {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(0, 0, 0, 0.6);
-			z-index: 0;
-		}
-
-		&__box {
-			padding: 1em;
-			border: 1px solid $main-color;
-			box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
-			z-index: 1;
-			&--text {
-				font-size: 1.2rem;
-				text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
-			}
-		}
+	}
+	&__shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: 0;
+	}
+	&__box {
+		padding: 1em;
+		border: 1px solid $main-color;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+		z-index: 1;
+	}
+	&__text {
+		font-size: 1.2rem;
+		text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 	}
 }
 //offers
 
 .offers {
 	&__p {
-		margin: 1em auto .5em;
+		margin: 1em auto 0.5em;
 		padding: 0.5em;
 		text-align: center;
 		font-size: 1rem;
@@ -276,7 +271,7 @@ body {
 		border: 1px solid transparent;
 		border-radius: 8px;
 		box-shadow: 2px 2px 2px 2px rgba(41, 41, 41, 0.8);
-		transition: transform .2s;
+		transition: transform 0.2s;
 		&:hover {
 			transform: scale(98%);
 		}
@@ -299,25 +294,24 @@ body {
 		font-size: 1rem;
 	}
 	&__check {
-		color: rgb(16, 197, 13)
+		color: rgb(16, 197, 13);
 	}
 	&__element-off {
 		color: rgb(122, 122, 122);
 	}
 	&__button {
 		margin-top: 1em;
-		padding: .5em 3em;
+		padding: 0.5em 3em;
 		font-size: 1.2rem;
 		border: 1px solid transparent;
 		border-radius: 8px;
 		box-shadow: 1px 1px 5px 0px rgba(66, 68, 90, 1);
 		background-color: $button-color2;
 		cursor: pointer;
-		transition: background-color .3s
+		transition: background-color 0.3s;
 	}
 	&__button-p {
 		background-color: $button-color;
-
 	}
 	&__button:hover {
 		background-color: $button-hover-color;
@@ -399,12 +393,10 @@ body {
 			background: url("/dist/img/girl-b.jpg");
 			background-size: cover;
 			background-position: center;
-			&__box {
-				&--text {
-					font-size: 1.4rem;
-					padding: 0 3em;
-				}
-			}
+		}
+		&__text {
+			font-size: 1.4rem;
+			padding: 0 3em;
 		}
 	}
 	.offers {
