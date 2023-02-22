@@ -100,7 +100,8 @@ body {
 	&__item {
 		position: relative;
 		margin-bottom: 0.5em auto;
-		padding: 0.5em 1em;
+		padding: 1.5em 1em;
+		font-size: 2rem;
 		font-weight: bold;
 		text-decoration: none;
 		color: $secondary-color;
@@ -164,13 +165,13 @@ body {
 		&__p {
 			padding: 0.3em;
 			margin: auto;
-			font-size: 1.3rem;
+			font-size: 2.2rem;
 			font-weight: bold;
 		}
 		&__h1 {
 			padding: 0.3em;
 			margin-bottom: 0.2em;
-			font-size: 1rem;
+			font-size: 1.5rem;
 			font-weight: normal;
 		}
 	}
@@ -187,6 +188,7 @@ body {
 		align-items: center;
 		text-transform: uppercase;
 		font-weight: normal;
+		font-size: 2.6rem;
 	}
 }
 .aboutus {
@@ -205,12 +207,12 @@ body {
 		color: $secondary-color;
 		&--h3 {
 			margin-bottom: 1em;
-			font-size: 1.4rem;
+			font-size: 1.7rem;
 			text-align: center;
 		}
 		&--p {
 			padding: 1em;
-			font-size: 0.8rem;
+			font-size: 1.1rem;
 		}
 	}
 }
@@ -245,7 +247,7 @@ body {
 		z-index: 1;
 	}
 	&__text {
-		font-size: 1.2rem;
+		font-size: 2.2rem;
 		text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 	}
 }
@@ -256,7 +258,7 @@ body {
 		margin: 1em auto 0.5em;
 		padding: 0.5em;
 		text-align: center;
-		font-size: 1rem;
+		font-size: 1.2rem;
 	}
 	&__cards-container {
 		padding: 1em;
@@ -280,11 +282,11 @@ body {
 	}
 	&__h3 {
 		margin-bottom: 0.3em;
-		font-size: 1.6rem;
+		font-size: 2.5rem;
 	}
 	&__price {
 		margin: 0.5em;
-		font-size: 1.9rem;
+		font-size: 2.7rem;
 		font-weight: bold;
 	}
 	&__list {
@@ -293,7 +295,7 @@ body {
 	}
 	&__element {
 		padding: 0.3em;
-		font-size: 1rem;
+		font-size: 1.3rem;
 	}
 	&__check {
 		color: rgb(16, 197, 13);
@@ -304,7 +306,7 @@ body {
 	&__button {
 		margin-top: 1em;
 		padding: 0.5em 3em;
-		font-size: 1.2rem;
+		font-size: 1.6rem;
 		border: 1px solid transparent;
 		border-radius: 8px;
 		box-shadow: 1px 1px 5px 0px rgba(66, 68, 90, 1);
@@ -322,9 +324,21 @@ body {
 
 //media
 @media (min-width: 576px) {
+	.aboutus {
+		&__text {
+			&--p {
+				font-size: 1.4rem;
+			}
+		}
+	}
 	.offers {
 		&__p {
-			font-size: 1.2rem;
+			font-size: 1.4rem;
+		}
+	}
+	.section {
+		&__heading {
+			font-size: 2.8rem;
 		}
 	}
 }
@@ -333,20 +347,19 @@ body {
 	.aboutus {
 		&__container {
 			display: flex;
-
-			&__img {
-				width: 38%;
-				margin-left: 3em;
+		}
+		&__img {
+			width: 38%;
+			margin-left: 3em;
+		}
+		&__text {
+			justify-content: flex-start;
+			&--h3 {
+				display: flex;
+				align-self: start;
 			}
-			&__text {
-				justify-content: flex-start;
-				&--h3 {
-					display: flex;
-					align-self: start;
-				}
-				&--p {
-					font-size: 0.9rem;
-				}
+			&--p {
+				font-size: 1.6rem;
 			}
 		}
 	}
@@ -358,12 +371,14 @@ body {
 			display: none;
 		}
 		&__items {
+			position: relative;
+			width: 40%;
+			height: 100%;
 			flex-direction: row;
 			align-items: center;
 			justify-content: flex-end;
-			padding: 0.5em 3em;
-			height: 2.5em;
-			right: 40px;
+			padding: 0;
+			right: -32em;
 			top: 0;
 			background-color: $main-color;
 			transition: transform 0.3s;
@@ -371,7 +386,9 @@ body {
 		}
 
 		&__item {
-			padding: 2.1em 1em 1.2em 1em;
+			padding: 1em;
+			height: 100%;
+			font-size: 1.7rem;
 			font-weight: normal;
 
 			&:hover {
@@ -397,13 +414,13 @@ body {
 			background-position: center;
 		}
 		&__text {
-			font-size: 1.4rem;
+			font-size: 2.8rem;
 			padding: 0 3em;
 		}
 	}
 	.offers {
 		&__p {
-			font-size: 1.4rem;
+			font-size: 1.6rem;
 		}
 	}
 }
