@@ -10,6 +10,7 @@
 
 html {
 	scroll-behavior: smooth;
+	font-size: 62.5%;
 }
 body {
 	font-size: 1.6rem;
@@ -29,13 +30,13 @@ body {
 	.logo {
 		margin: 0 1em;
 		position: absolute;
-		top: 22px;
+		top: 10px;
 		left: 10px;
 		display: flex;
 		justify-content: left;
 		align-items: center;
 		h2 {
-			font-size: 40px;
+			font-size: 3rem;
 			color: $logo-color;
 			font-weight: normal;
 		}
@@ -46,11 +47,11 @@ body {
 		justify-content: center;
 		align-items: center;
 		position: fixed;
-		top: 20px;
-		right: 20px;
-		padding: 0.6em;
-		height: 55px;
-		width: 60px;
+		top: 8px;
+		right: 25px;
+		padding: 0.5em;
+		height: 40px;
+		width: 45px;
 		background: none;
 		cursor: pointer;
 		border: 1.5px solid $secondary-color;
@@ -67,8 +68,9 @@ body {
 			top: 0;
 			width: 65%;
 			height: 3px;
-			margin-bottom: 9px;
+			margin-bottom: 7px;
 			background-color: $secondary-color;
+			border-radius: 8px;
 		}
 
 		&__bar:last-child {
