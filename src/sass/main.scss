@@ -81,7 +81,7 @@ body {
 		}
 	}
 
-	&__items {
+	&__items-mobile {
 		position: absolute;
 		display: flex;
 		flex-direction: column;
@@ -95,6 +95,9 @@ body {
 		top: 3em;
 		background-color: $main-color;
 		transition: transform 0.3s;
+	}
+	&__items-desktop {
+		display: none;
 	}
 	&__item {
 		position: relative;
@@ -206,12 +209,12 @@ body {
 		color: $secondary-color;
 		&--h3 {
 			margin-bottom: 1em;
-			font-size: 1.7rem;
+			font-size: 1.8rem;
 			text-align: center;
 		}
 		&--p {
 			padding: 1em;
-			font-size: 1.1rem;
+			font-size: 1.3rem;
 		}
 	}
 }
@@ -257,7 +260,7 @@ body {
 		margin: 1em auto 0.5em;
 		padding: 0.5em;
 		text-align: center;
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 	}
 	&__cards-container {
 		padding: 1em;
@@ -294,7 +297,7 @@ body {
 	}
 	&__element {
 		padding: 0.3em;
-		font-size: 1.3rem;
+		font-size: 1.5rem;
 	}
 	&__check {
 		color: rgb(16, 197, 13);
@@ -326,13 +329,13 @@ body {
 	.aboutus {
 		&__text {
 			&--p {
-				font-size: 1.4rem;
+				font-size: 1.5rem;
 			}
 		}
 	}
 	.offers {
 		&__p {
-			font-size: 1.4rem;
+			font-size: 1.5rem;
 		}
 	}
 	.section {
@@ -358,7 +361,7 @@ body {
 				align-self: start;
 			}
 			&--p {
-				font-size: 1.6rem;
+				font-size: 1.7rem;
 			}
 		}
 	}
@@ -386,18 +389,19 @@ body {
 		.burger-btn {
 			display: none;
 		}
-		&__items {
-			position: relative;
+		&__items-mobile {
+			display: none;
+		}
+		&__items-desktop {
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
 			width: 40%;
 			height: 100%;
-			flex-direction: row;
-			align-items: center;
-			justify-content: flex-end;
-			padding: 0;
-			right: -32em;
-			top: 0;
+			right: 0;
 			background-color: $main-color;
-			transition: transform 0.3s;
 			z-index: -1;
 		}
 
