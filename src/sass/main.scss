@@ -343,6 +343,59 @@ body {
 	}
 }
 
+.footer {
+	&__boxes {
+		padding: 1em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background-color: $footer-color;
+	}
+	&__box {
+		margin-bottom: 0.5em;
+		padding: 0.5em;
+	}
+	&__h3 {
+		margin-bottom: 0.9em;
+		font-size: 2.1rem;
+	}
+	&__el {
+		margin: 0 1em;
+		text-decoration: none;
+		font-size: 1.8rem;
+		color: $secondary-color;
+		transition: color 0.3s;
+		&:hover {
+			color: $button-color;
+		}
+	}
+	&__logo {
+		a {
+			font-size: 3rem;
+			text-decoration: none;
+			color: $logo-color;
+			h3 {
+				margin-bottom: 1em;
+				font-weight: normal;
+			}
+		}
+	}
+	&__end {
+		background-color: $footer-color2;
+		&--line {
+			width: 100%;
+			height: 1px;
+			background-color: gray;
+		}
+		&--text {
+			padding: 1em;
+			font-size: 1.4rem;
+			text-align: center;
+		}
+	}
+}
 //media
 @media (min-width: 576px) {
 	.aboutus {
@@ -365,6 +418,16 @@ body {
 }
 
 @media (min-width: 768px) {
+	.header {
+		.hero-img {
+			&__h1 {
+				font-size: 2rem;
+			}
+			&__p {
+				font-size: 3rem;
+			}
+		}
+	}
 	.aboutus {
 		&__container {
 			display: flex;
@@ -395,71 +458,110 @@ body {
 			margin: 1em auto;
 		}
 	}
+	.footer {
+		position: relative;
+		&__boxes{
+			margin: 2em auto 1em;
+			flex-direction: row;
+			justify-content: center;
+			align-items: start;
+			width: 100%;
+		}
+		&__box {
+			top: 0;
+			padding: 1em 2em;
+			text-align: left;
+		}
+		&__h3{
+			text-align: left;
+		}
 
-	@media (min-width: 992px) {
-		.section {
-			&__heading {
-				font-size: 3.2rem;
-				margin-bottom: 1em;
+		&__el {
+			margin: 0;
+			padding: .5em 0;
+			display: block;
+			text-align: left;
+		}
+		&__logo {
+			width: 35%;
+			align-self: center;
+			a{
+				font-size: 3.5rem;
 			}
 		}
-		.nav {
-			.burger-btn {
+	}
+}
+
+@media (min-width: 992px) {
+	.section {
+		&__heading {
+			font-size: 3.2rem;
+			margin-bottom: 1em;
+		}
+	}
+	.nav {
+		.burger-btn {
+			display: none;
+		}
+		&__items-mobile {
+			display: none;
+		}
+		&__items-desktop {
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+			width: 40%;
+			height: 100%;
+			right: 0;
+			background-color: $main-color;
+			z-index: -1;
+		}
+
+		&__item {
+			padding: 1em;
+			height: 100%;
+			font-size: 1.7rem;
+			font-weight: normal;
+
+			&:hover {
+				color: $main-color;
+				background-color: $secondary-color;
+			}
+			&::after {
 				display: none;
 			}
-			&__items-mobile {
-				display: none;
-			}
-			&__items-desktop {
-				position: absolute;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				flex-direction: row;
-				width: 40%;
-				height: 100%;
-				right: 0;
-				background-color: $main-color;
-				z-index: -1;
-			}
-
-			&__item {
-				padding: 1em;
-				height: 100%;
-				font-size: 1.7rem;
-				font-weight: normal;
-
-				&:hover {
-					color: $main-color;
-					background-color: $secondary-color;
-				}
-				&::after {
-					display: none;
-				}
-			}
 		}
-		.header {
-			.hero-img {
-				justify-content: start;
-				background-image: url("../../dist/img/jungle-b.jpg");
-			}
-		}
+	}
+	.header {
+		.hero-img {
+			justify-content: start;
+			background-image: url("../../dist/img/jungle-b.jpg");
 
-		.banner-section {
-			&__img {
-				background: url("../../dist/img/girl-b.jpg");
-				background-size: cover;
-				background-position: center;
+			&__h1 {
+				font-size: 2.4rem;
 			}
-			&__text {
-				font-size: 2.8rem;
-				padding: 0 3em;
-			}
-		}
-		.offers {
 			&__p {
-				font-size: 1.6rem;
+				font-size: 3.4rem;
 			}
 		}
+	}
+}
+
+.banner-section {
+	&__img {
+		background: url("../../dist/img/girl-b.jpg");
+		background-size: cover;
+		background-position: center;
+	}
+	&__text {
+		font-size: 2.8rem;
+		padding: 0 3em;
+	}
+}
+.offers {
+	&__p {
+		font-size: 1.6rem;
 	}
 }
