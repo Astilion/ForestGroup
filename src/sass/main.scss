@@ -144,7 +144,6 @@ body {
 		justify-content: center;
 		align-items: center;
 		height: 60vh;
-		width: 100vw;
 		background-image: url("../../dist/img/jungle-s.jpg");
 		background-position: center;
 		background-size: cover;
@@ -460,7 +459,7 @@ body {
 	}
 	.footer {
 		position: relative;
-		&__boxes{
+		&__boxes {
 			margin: 2em auto 1em;
 			flex-direction: row;
 			justify-content: center;
@@ -472,20 +471,20 @@ body {
 			padding: 1em 2em;
 			text-align: left;
 		}
-		&__h3{
+		&__h3 {
 			text-align: left;
 		}
 
 		&__el {
 			margin: 0;
-			padding: .5em 0;
+			padding: 0.5em 0;
 			display: block;
 			text-align: left;
 		}
 		&__logo {
 			width: 35%;
 			align-self: center;
-			a{
+			a {
 				font-size: 3.5rem;
 			}
 		}
