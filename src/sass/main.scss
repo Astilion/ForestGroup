@@ -532,6 +532,10 @@ body {
 			&::after {
 				display: none;
 			}
+			&--scroll {
+				color: $main-color;
+				background-color: $secondary-color;
+			}
 		}
 	}
 	.header {
