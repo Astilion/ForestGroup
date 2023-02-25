@@ -144,7 +144,7 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 60vh;
+		height: 375px;
 		background-image: url("../../dist/img/jungle-s.jpg");
 		background-position: center;
 		background-size: cover;
@@ -231,7 +231,7 @@ body {
 		align-items: center;
 		justify-content: center;
 		text-align: center;
-		height: 35vh;
+		height: 218px;
 		background: url("../../dist/img/girl-s.jpg");
 		background-size: cover;
 		background-position: center;
@@ -532,7 +532,7 @@ body {
 			&::after {
 				display: none;
 			}
-			&--scroll {
+			&--active {
 				color: $main-color;
 				background-color: $secondary-color;
 			}
