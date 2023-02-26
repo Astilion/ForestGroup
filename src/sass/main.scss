@@ -580,3 +580,13 @@ body {
 		font-size: 1.6rem;
 	}
 }
+
+@media (min-width:1200px) {
+	.offers {
+		&__cards-container {
+			justify-content: center;
+}
+&__card {
+	margin: 1em;
+}
+}}
