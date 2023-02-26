@@ -399,6 +399,14 @@ body {
 		}
 	}
 }
+
+//moreoffers 
+
+ .moreoffers {
+	&__h2 {
+		padding: 1em;
+	}
+ }
 //media
 @media (min-width: 576px) {
 	.aboutus {
