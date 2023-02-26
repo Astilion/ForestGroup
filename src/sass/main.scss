@@ -18,6 +18,9 @@ body {
 	font-family: "Montserrat", sans-serif;
 	background-color: $main-color;
 }
+.nav-open {
+	overflow: hidden;
+}
 
 // NAV
 .nav {
