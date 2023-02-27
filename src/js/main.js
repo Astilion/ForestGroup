@@ -4,7 +4,21 @@ const footerYear = document.querySelector(".footer-year");
 const desktopNavItems = document.querySelectorAll(".nav__item");
 const scrollSections = document.querySelectorAll(".scroll-section");
 
+const cookieBox = document.querySelector('.cookies__box')
+const cookiesAcceptBtn = document.querySelector('.acceptbtn')
+const cookiesDeclineBtn = document.querySelector('.declinebtn')
 
+const handleCookieBox = () => {
+    localStorage.setItem("cookie", "true");
+    cookieBox.classList.add("hide");
+};
+const showCookie = () => {
+    const cookieEaten = localStorage.getItem("cookie");
+
+    if (cookieEaten) {
+        cookieBox.classList.add("hide");
+    }
+};
 
 
 
@@ -40,6 +54,10 @@ const scrollSpy = () => {
 		});
 	}
 };
+
 burgerBtn.addEventListener("click", handleNav);
 window.addEventListener("scroll", scrollSpy);
 navItems.addEventListener('click', closeNav)
+cookiesAcceptBtn.addEventListener("click", handleCookieBox);
+cookiesDeclineBtn.addEventListener("click", handleCookieBox);
+showCookie()
