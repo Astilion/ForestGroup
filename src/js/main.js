@@ -5,6 +5,9 @@ const desktopNavItems = document.querySelectorAll(".nav__item");
 const scrollSections = document.querySelectorAll(".scroll-section");
 
 
+
+
+
 footerYear.textContent = new Date().getFullYear();
 
 const handleNav = () => {
