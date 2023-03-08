@@ -477,7 +477,6 @@ body {
 		align-items: center;
 		text-align: left;
 		background-color: $main-color;
-
 	}
 	.contact__container {
 		padding: 1em;
@@ -572,9 +571,9 @@ body {
 			}
 		}
 	}
-	.google-map{
-		&__h2{
-font-size: 2.6rem;
+	.google-map {
+		&__h2 {
+			font-size: 2.6rem;
 		}
 	}
 }
@@ -742,10 +741,9 @@ font-size: 2.6rem;
 	.google-map {
 		padding: 1em 5em;
 
-			&__h2{
-	font-size: 3rem;
-			}
-		
+		&__h2 {
+			font-size: 3rem;
+		}
 	}
 }
 
@@ -759,12 +757,11 @@ font-size: 2.6rem;
 		}
 	}
 	.form {
-
 		&__h2 {
 			font-size: 3.5rem;
 		}
 		&__box {
-			width: 50%;	
+			width: 50%;
 		}
-}
+	}
 }
