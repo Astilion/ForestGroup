@@ -556,6 +556,8 @@ body {
 			font-size: 2.8rem;
 		}
 		&__box {
+			align-self: center;
+			width: 75%;
 			label {
 				font-size: 2rem;
 			}
@@ -718,7 +720,10 @@ body {
 		}
 	}
 	.form {
-		padding: 1.5em 12em;
+		padding: 1.5em 6em;
+		&__box {
+			width: 65%;
+		}
 	}
 	.google-map {
 		padding: 1em 5em;
@@ -734,4 +739,13 @@ body {
 			margin: 1em;
 		}
 	}
+	.form {
+
+		&__h2 {
+			font-size: 3.5rem;
+		}
+		&__box {
+			width: 50%;	
+		}
+}
 }
