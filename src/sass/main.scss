@@ -477,9 +477,18 @@ body {
 		align-items: center;
 		text-align: left;
 		background-color: $main-color;
+
 	}
 	.contact__container {
+		padding: 1em;
 		text-align-last: left;
+		border: 1px solid transparent;
+		border-radius: 8px;
+		box-shadow: 2px 2px 2px 2px rgba(41, 41, 41, 0.8);
+		transition: transform 0.2s;
+		&:hover {
+			transform: scale(102%);
+		}
 	}
 }
 
@@ -561,6 +570,11 @@ body {
 			label {
 				font-size: 2rem;
 			}
+		}
+	}
+	.google-map{
+		&__h2{
+font-size: 2.6rem;
 		}
 	}
 }
@@ -727,6 +741,11 @@ body {
 	}
 	.google-map {
 		padding: 1em 5em;
+
+			&__h2{
+	font-size: 3rem;
+			}
+		
 	}
 }
 
