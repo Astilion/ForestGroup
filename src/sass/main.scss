@@ -7,7 +7,6 @@
 	margin: 0;
 	padding: 0;
 }
-
 html {
 	scroll-behavior: smooth;
 	font-size: 62.5%;
@@ -21,7 +20,6 @@ body {
 .nav-open {
 	overflow: hidden;
 }
-
 // NAV
 .nav {
 	position: fixed;
@@ -29,7 +27,6 @@ body {
 	height: 3.5em;
 	background-color: $main-color;
 	z-index: 100;
-
 	.logo {
 		position: absolute;
 		display: flex;
@@ -62,13 +59,11 @@ body {
 		border: 1.5px solid $secondary-color;
 		border-radius: 8px;
 		cursor: pointer;
-
 		&:focus {
 			outline: none;
 			border: 1.5px solid $secondary-color;
 			border-radius: 8px;
 		}
-
 		&__bar {
 			position: relative;
 			margin-bottom: 7px;
@@ -78,7 +73,6 @@ body {
 			background-color: $secondary-color;
 			border-radius: 8px;
 		}
-
 		&__bar:last-child {
 			margin-bottom: 0;
 		}
@@ -87,7 +81,6 @@ body {
 			background-color: $footer-color;
 		}
 	}
-
 	&__items-mobile {
 		position: absolute;
 		display: flex;
@@ -134,7 +127,6 @@ body {
 		}
 	}
 }
-
 .active {
 	transform: translate(-100vw);
 }
@@ -172,15 +164,16 @@ body {
 		}
 		&__p {
 			margin: auto;
-			padding: 0.3em;
 			font-size: 2.2rem;
 			font-weight: bold;
 		}
 		&__h1 {
 			margin-bottom: 0.2em;
-			padding: 0.3em;
 			font-size: 1.5rem;
 			font-weight: normal;
+		}
+		&__pad {
+			padding: 0.3em;
 		}
 	}
 }
@@ -260,11 +253,9 @@ body {
 	}
 }
 //offers
-
 .offers {
 	&__p {
 		margin: 1em auto 0.5em;
-		padding: 0.5em;
 		text-align: center;
 		font-size: 1.3rem;
 	}
@@ -277,7 +268,6 @@ body {
 		align-items: center;
 		justify-content: center;
 		margin: 0.5em auto 1em;
-		padding: 0.5em;
 		height: 400px;
 		width: 280px;
 		border: 1px solid transparent;
@@ -287,6 +277,9 @@ body {
 		&:hover {
 			transform: scale(98%);
 		}
+	}
+	&__pad {
+		padding: 0.5em;
 	}
 	&__h3 {
 		margin-bottom: 0.3em;
@@ -345,7 +338,6 @@ body {
 		}
 	}
 }
-
 .footer {
 	&__boxes {
 		display: flex;
@@ -400,15 +392,12 @@ body {
 		}
 	}
 }
-
 //moreoffers
-
 .moreoffers {
 	&__h2 {
 		padding: 1em;
 	}
 }
-
 //contact
 .form {
 	display: flex;
@@ -459,9 +448,7 @@ body {
 		}
 	}
 }
-
 // GOOGLE MAPS
-
 .google-map {
 	padding: 1em;
 	width: 100%;
@@ -490,7 +477,6 @@ body {
 		}
 	}
 }
-
 // COOKIES
 .cookies {
 	&__box {
@@ -577,7 +563,6 @@ body {
 		}
 	}
 }
-
 @media (min-width: 768px) {
 	.header {
 		.hero-img {
@@ -655,7 +640,6 @@ body {
 		padding: 1.5em 5em;
 	}
 }
-
 @media (min-width: 992px) {
 	.section {
 		&__heading {
@@ -746,7 +730,6 @@ body {
 		}
 	}
 }
-
 @media (min-width: 1200px) {
 	.offers {
 		&__cards-container {
