@@ -32,6 +32,8 @@ Celem projektu jest przećwiczenie HTML, CSS, podstaw JavaScript, gulp, git, git
 
 ## Screenshots
 ![screenshot](./src/img/Screenshot_readme.png)
+![screenshot](./src/img/Screenshot_readme2.png)
+![screenshot](./src/img/Screenshot_readme3.png)
 
 ## Setup
 Project Doesn't need instalation, just run live demo [_here_](https://astilion.github.io/ForestGroup/).
