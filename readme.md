@@ -5,15 +5,12 @@
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
-* [Features](#features)
 * [Screenshots](#screenshots)
 * [Setup](#setup)
-* [Usage](#usage)
 * [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
-<!-- * [License](#license) -->
+
 
 
 ## General Information
@@ -49,3 +46,6 @@ Project is: _complete_
 
 
 - Many thanks to Mateusz Maj, creator of MMC School, udemy teacher - (_link_) (https://www.udemy.com/user/majek-2/).
+
+## Contact
+Created by Astilion - feel free to contact me mkaminski.contact@gmail.com
