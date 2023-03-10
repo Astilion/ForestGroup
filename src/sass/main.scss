@@ -61,7 +61,7 @@ body {
 		cursor: pointer;
 		&:focus {
 			outline: none;
-			border: 1.5px solid $secondary-color;
+			border: 1.5px solid $logo-color;
 			border-radius: 8px;
 		}
 		&__bar {

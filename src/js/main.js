@@ -3,7 +3,6 @@ const navItems = document.querySelector(".nav__items-mobile");
 const footerYear = document.querySelector(".footer-year");
 const desktopNavItems = document.querySelectorAll(".nav__item");
 const scrollSections = document.querySelectorAll(".scroll-section");
-
 const cookieBox = document.querySelector('.cookies__box')
 const cookiesAcceptBtn = document.querySelector('.acceptbtn')
 const cookiesDeclineBtn = document.querySelector('.declinebtn')
