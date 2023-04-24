@@ -18,7 +18,7 @@ The project is the culmination of work with the MMC School web development cours
 Contains:
 - a page with two subpages
 - sections: About us, Offer, Contact.
-Celem projektu jest przećwiczenie HTML, CSS, podstaw JavaScript, gulp, git, github i Sass.
+The purpose of this project is to practice of HTML, CSS, JavaScript basics, gulp, git, github & Sass.
 
 
 
